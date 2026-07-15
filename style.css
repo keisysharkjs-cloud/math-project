@@ -51,7 +51,7 @@ header {
 /* ==== Навигация ==== */
 .nav__title {
    margin: 30px;
-   color: rgb(46, 46, 245);
+   color: rgb(42, 82, 190);
 }
 
 .nav__item {
@@ -80,7 +80,7 @@ header {
 }
 
 .research__heading {
-   color: rgb(57, 57, 224);
+   color: rgb(42, 82, 190);
 }
 
 .research__text {
@@ -88,7 +88,8 @@ header {
 }
 
 .research__text strong {
-   color: rgb(27, 27, 212);
+   color: rgb(42, 82, 190);
+   letter-spacing: 0.4px;
 }
 
 
@@ -183,7 +184,7 @@ header {
    min-width: 240px; 
    text-align: center;
    margin-top: 30px;
-   box-shadow: 0 3px 12px #000000;  border-radius: 10px;
+   box-shadow: 0px 2px 15px #000000;  border-radius: 10px;
 }
 
 .examples__card--card:hover {
