@@ -59,6 +59,7 @@ header {
 }
 
 .nav__item--section {
+   color: rgb(0, 14, 141);
    margin-left: 20px;
    letter-spacing: 0.5px;
 }
