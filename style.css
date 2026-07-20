@@ -37,10 +37,10 @@
 
 /* ==== Header ==== */
 header {
-   background-color: rgb(42, 82, 190);
-   height: 100px;
    display: flex;
    justify-content: center;
+   background-color: rgb(42, 82, 190);
+   height: 5.625rem;
    width: 100%;
 }
 
@@ -50,13 +50,13 @@ header {
    justify-content: center;
    text-align: center;
    color: white;
-   height: 75px;
+   font-size: 2rem;
 }
 
 
 /* ==== Навигация ==== */
 .nav__title {
-   margin: 30px;
+   margin: 1.875rem;
    color: rgb(42, 82, 190);
 }
 
@@ -66,7 +66,7 @@ header {
 
 .nav__item--section {
    color: rgb(0, 14, 141);
-   margin-left: 20px;
+   margin-left: 1.25rem;
    letter-spacing: 0.5px;
 }
 
@@ -82,8 +82,8 @@ header {
 
 /* ==== Блок: research ==== */
 .research__block {
-   margin: 30px;
-   margin-top: 50px;
+   margin: 1.875rem;
+   margin-top: 3.125rem;
 }
 
 .research__heading {
@@ -91,7 +91,7 @@ header {
 }
 
 .research__text {
-   font-size: 17px;
+   font-size: 1rem;
 }
 
 .research__text strong {
@@ -138,7 +138,7 @@ header {
 
 .hero__subtitle {
    color: rgb(42, 82, 190);
-   margin-top: 20px;
+   margin-top: 1.25rem;
    font-size: 1.5rem;
 }
 
@@ -148,12 +148,12 @@ header {
    color: #ffffff;
    cursor: pointer;
    border: none;
-   border-radius: 10px;
-   padding: 10px;
+   border-radius: 0.625rem;
+   padding: 0.625rem;
    background-color: rgb(42, 82, 190);
-   font-size: medium;
+   font-size: 1rem;
    text-decoration: none;
-   margin: 10px;
+   margin: 0.625rem;
    transition: background-color 0.5s ease;
 }
 
@@ -179,7 +179,7 @@ header {
 .examples__container {
    display: flex;
    justify-content: center;
-   gap: 40px;
+   gap: 2.5rem;
    flex-wrap: wrap;
 }
 
@@ -188,10 +188,11 @@ header {
    color: white;
    position: relative;
    transition: background-color 0.5s ease, transform 0.3s ease;
-   min-width: 240px; 
+   min-width: 15rem; 
    text-align: center;
-   margin-top: 30px;
-   box-shadow: 0px 2px 15px #000000;  border-radius: 10px;
+   margin-top: 2.5rem;
+   box-shadow: 0px 2px 15px #000000;  
+   border-radius: 0.625rem;
 }
 
 .examples__card--card:hover {
@@ -199,26 +200,26 @@ header {
    background-color: rgb(25, 60, 167);
 }
 .card__icon {
-   padding: 8px;
+   padding: 0.5rem;
 }
 
 .card__formula {
-   padding: 14px;
+   padding: 0.875rem;
    font-weight: bold;
 }
 
 
 /* ==== Блок: summary ==== */
 .research__summary {
-   margin: 30px;
+   margin: 2.5rem;
 }
 
 
 /* ==== Блок: facts (факты) ==== */
 .facts {
-   max-width: 800px;
+   max-width: 50rem;
    margin: auto;
-   padding: 25px;
+   padding: 1.5625rem;
    text-align: center;
    font-size: 1.2rem;
 }
@@ -230,10 +231,10 @@ header {
    transition: background-color 0.5s ease;
    cursor: pointer;
    border: none;
-   border-radius: 10px;
-   padding: 10px;
+   border-radius: 0.625rem;
+   padding: 0.625rem;
    background-color: rgb(42, 82, 190);
-   font-size: medium;
+   font-size: 1rem;
 }
 
 #facts__btn:hover {
@@ -248,7 +249,7 @@ header {
 .facts__container {
    display: none;
    justify-content: center;
-   gap: 40px;
+   gap: 2.5rem;
    flex-wrap: wrap;
 }
 
@@ -258,9 +259,9 @@ header {
 
 #facts__msg {
    background-color: rgb(42, 82, 190);
-   border-radius: 10px;
-   padding: 0px 20px 0px 28px; 
-   margin: 20px;
+   border-radius: 0.625rem;
+   padding: 0rem 1.25rem 0rem 1.75rem; 
+   margin: 1.25rem;
    color: white;
    font-weight: bold;
 }
@@ -275,10 +276,72 @@ header {
 footer {
    background-color: rgb(42, 82, 190);
    text-align: center;
-   padding: 40px 20px;
+   padding: 1.25rem 1.25rem; /* 20px 20px */
    color: white;
-   margin-top: 60px;
-   height: 100px;
+   margin-top: 3.75rem; /* 60px */
    font-weight: bolder;
-   font-size: 18px;
+   font-size: 1.25rem; /* 20px */
+}
+
+
+/* Медиазапросы (@media) */
+@media ( max-width: 1024px) {
+header {
+   height: 13vh;
+}
+
+.header__title {
+   font-size: 1.6rem; /* 24px */
+}
+
+.footer__text {
+   font-size: 1rem; /* 16px */
+}  
+}
+
+@media ( max-width: 768px) {
+header {
+   height: 11vh;
+}
+
+.header__title {
+   display: flex;
+   justify-content: center;
+   font-size: 1.25rem;
+}
+
+.footer__text {
+   font-size: 0.975rem; /* 20px */
+}  
+}
+
+@media ( max-width: 480px ) {
+header {
+   display: flex;
+   justify-content: center;
+   height: 13vh;
+}
+   
+.header__title {
+   font-size: 1.35rem; /* 16px */
+}
+
+.footer__text {
+   font-size: 0.850rem;
+}  
+}  
+
+@media ( max-width: 350px) {
+header {
+   height: 11vh;
+}
+
+.header__title {
+   font-size: 1.15rem;
+}
+
+.footer__text {
+   font-size: 0.800rem;
+}
+
 }
